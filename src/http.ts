@@ -34,7 +34,6 @@ export class Http {
 
     private generateSignature(method: string, path: string, body: any, timestamp: string): string {
         const message = `${method}${path}${body}${timestamp}`;
-        console.log("message: ", message);
         const messageBuffer = Buffer.from(message, "utf8");
         const signature = nacl.sign.detached(messageBuffer, Buffer.from(this.secretKey, "hex"));
         return Buffer.from(signature).toString("hex");

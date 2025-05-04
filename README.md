@@ -22,7 +22,7 @@ const dmarket = new DMarketService(apiKey, apiSecret, gameId);
 
 // Example: Search market items
 dmarket
-  .searchMarketItems(title, { limit: 10 })
+  .searchMarketItems("item name", { limit: 10 })
   .then((res) => {
     console.log("result: ", res);
   })
