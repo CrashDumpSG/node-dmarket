@@ -1,0 +1,49 @@
+{
+  "name": "node-dmarket",
+  "version": "1.0.0",
+  "description": "TypeScript wrapper for DMarket API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc -w & nodemon dist/index.js",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrashDumpSG/node-dmarket.git"
+  },
+  "keywords": [
+    "dmarket",
+    "api",
+    "wrapper",
+    "typescript",
+    "trading",
+    "cs2",
+    "csgo",
+    "tf2",
+    "dota2",
+    "rust"
+  ],
+  "author": "CrashDumpSG",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CrashDumpSG/node-dmarket/issues"
+  },
+  "homepage": "https://github.com/CrashDumpSG/node-dmarket#readme",
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {
+    "axios": "^1.9.0",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.8.3"
+  }
+}
