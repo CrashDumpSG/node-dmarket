@@ -64,7 +64,7 @@ export class DMarketService {
             params: {
                 gameId: this.gameId,
                 title,
-                limit: Math.min(limit, 100),
+                limit: Math.min(limit, 500),
                 ...options?.params,
             },
             ...options,
